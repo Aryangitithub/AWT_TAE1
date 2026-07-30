@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student ID Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student ID Card Registration</h1>
+
+    <h3>Student Name:type your Name</h3>
+    <h3>Roll Number: _ _</h3>
+    <h3>Subject: Advanced Web Technology</h3>
+    <h3>Subject Code: 23UITPCL3508</h3>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Roll Number</label><br>
+        <input type="number" id="roll"><br><br>
+
+        <label>Email</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label>Mobile</label><br>
+        <input type="text" id="mobile"><br><br>
+
+        <label>Year</label><br>
+        <select id="year">
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Final Year</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Generate ID</button>
+
+    </form>
+
+    <h2 id="message"></h2>
+
+    <h2>Technologies</h2>
+
+    <ul id="technology"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
 
